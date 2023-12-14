@@ -1,0 +1,58 @@
+/* estilos.css */
+
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.gradient-background {
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    background-color: #3498db;
+    width: 100%;
+}
+
+.custom-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ecf0f1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-toggler-icon {
+    background-color: #ecf0f1;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.nav-link {
+    color: #ecf0f1 !important;
+    font-weight: bold;
+}
+
+.content-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.content-container h2 {
+    color: #333;
+}

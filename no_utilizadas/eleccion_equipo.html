@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    
+        <!-- Vinculacion con Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+        <!-- Vinculacion de JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js"></script>
+    
+        <!-- Estilos personalizados de Bootstrap.html -->
+        <style>
+            body {
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 0;
+                font-family: 'Ginebra', sans-serif;
+            }
+    
+            .gradient-background {
+                background: linear-gradient(to bottom, #40aff9, #245373);
+                color: #fff;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            .navbar {
+                background-color: rgb(31, 140, 212); /* Cambia el color de navbar*/
+                width: 100%;
+            }
+    
+            .navbar-brand {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #ecf0f1;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                font-family: 'Roboto', sans-serif;
+            }
+    
+            .navbar-toggler-icon {
+                background-color: #ecf0f1;
+            }
+    
+            .navbar-nav {
+                flex-direction: row;
+                border-top: 1px solid rgb(0, 0, 0); /* Línea divisoria superior */
+                border-bottom: 1px solid rgba(0, 0, 0); /* Línea divisoria inferior */
+            }
+    
+            .nav-item {
+                padding: 0 10px;
+                border-right: 2px solid rgb(0, 0, 0); /* Línea divisoria entre elementos */
+            }
+    
+            .nav-link {
+                color: #ecf0f1 !important;
+                font-weight: bold;
+            }
+    
+            .content-container {
+                text-align: center;
+                padding: 20px;
+            }
+    
+            .content-container h2 {
+                color: #333;
+            }
+/* Estilos de botones de selccion */
+        body {
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .second-navbar {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .second-nav-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: rgb(31, 140, 212);
+            color: #fff;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            width: 100%; /* ancho */
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .second-nav-button:hover {
+            background-color: #fff;
+            color: rgb(2, 17, 156);
+        }
+
+        .second-nav-button img {
+            width: 30px; /* Tamaño de la imagen */
+            height: auto;
+            margin-right: 10px; /* Mueve la imagen al margen derecho del texto */
+        }
+
+        .second-nav-button span {
+            text-align: center;
+        }
+        </style>
+
+
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Document</title>
+
+</head>
+<body class="gradient-background">
+    <h1 class="text-dark">TechSentry</h1>
+    <!-- Navbar de Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="index">Inicio</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Articulos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/eleccion_equipo">Crear Orden</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ordenes">Ordenes De Trabajo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ventas</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/clientes">Clientes</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Configuracion Del Perfil</a>
+                </li>
+                </ul>
+        </div>
+    </nav>
+
+<P>Creando orden de Trabajo</P> 
+<h2 class="content-container">SELECCIONE EL EQUIPO</h2>
+    <!-- Botones de eleccion -->
+    <div class="second-navbar">
+        <button class="second-nav-button" onclick="location.href='/formulario_smartphone'">
+            <img src="/static/celular.png">
+            <span>Smartphone</span>
+        </button>
+        <button class="second-nav-button" onclick="location.href='/formulario_tv'">
+            <img src="#">
+            <span>Televisor</span>
+        </button>
+        <button class="second-nav-button" onclick="location.href='#'">
+            <img src="#">
+            <span>Impresora</span>
+        </button>
+        <button class="second-nav-button" onclick="location.href='#'">
+            <img src="#">
+            <span>Computadora</span>
+        </button>
+        <button class="second-nav-button" onclick="location.href='#'">
+            <img src="#">
+            <span>Consola de Videojuegos</span>
+        </button>
+    </div>
+
+    <table class="table">
+        <tbody>
+            <!-- Datos de clientes se insertarán aquí dinámicamente desde script.py -->
+        </tbody>
+    </table>
+</body>
+</html>
